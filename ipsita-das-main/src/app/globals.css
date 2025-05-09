@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Font family variables */
+  --font-family-poppins: var(--font-poppins);
+  
+  /* Font weight helpers for Levenim MT */
+  --font-levenim-regular: 400;
+  --font-levenim-bold: 700;
+  
+  /* Color variables */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-poppins);
+}
+
+h1 {
+  font-family: var(--font-levenim-mt);
+  font-weight: 700;
+}
+
+/* Helper classes for Levenim MT font */
+.font-levenim {
+  font-family: var(--font-levenim-mt);
+}
+
+.font-levenim-regular {
+  font-family: var(--font-levenim-mt);
+  font-weight: var(--font-levenim-regular);
+}
+
+.font-levenim-bold {
+  font-family: var(--font-levenim-mt);
+  font-weight: var(--font-levenim-bold);
+}
