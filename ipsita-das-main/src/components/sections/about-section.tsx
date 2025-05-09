@@ -1,5 +1,7 @@
+// src/components/sections/about-section.tsx
 "use client";
-import Image from "next/image"
+import Image from "next/image";
+import ReserveButton from "../ReserveButton";
 
 const AboutSection = ({ className = "" }) => {
   return (
@@ -81,16 +83,19 @@ const AboutSection = ({ className = "" }) => {
               Ipsita, the Founder of BeingBeyond, helps self-aware individuals create deep, sustainable change—not through hype or therapy, but through actionable frameworks of emotional mastery, inner clarity, and strategic alignment. Her background spans communication, psychology, and study of the human behavior across cultures—blending academic depth with lived experience. Her work is structured, nuanced, and deeply personal/tailored. Her approach goes beyond conventional coaching to offer real tools for breakthrough transformations.
             </p>
 
-            <div className="bg-[#D9D9D933] flex justify-center items-center rounded-[18px] py-8">
-              <p className="font-bold text-center">
+            <div className="bg-[#D9D9D933] flex flex-col items-center justify-center rounded-[18px] py-8 mb-8">
+              <p className="font-bold text-center mb-6">
                 "It's not life coaching as most people know it<br/>—it's transformation that sticks."
               </p>
+              
+              {/* Added Reserve Button to About section */}
+              <ReserveButton />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

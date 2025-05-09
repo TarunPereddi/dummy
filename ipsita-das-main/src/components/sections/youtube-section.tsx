@@ -26,16 +26,6 @@ const videos = [
     thumbnail: "/images/YOUTUBE_THUMBNAILS/Reset.png?height=166&width=300",
     link: "https://youtube.com/watch?v=example4",
   },
-  {
-    title: "How to overcome self-doubt in 3 steps",
-    thumbnail: "https://placehold.co/300x166",
-    link: "https://youtube.com/watch?v=example5",
-  },
-  {
-    title: "Morning routine for success and happiness",
-    thumbnail: "https://placehold.co/300x166",
-    link: "https://youtube.com/watch?v=example6",
-  },
 ]
 
 export default function YouTubeSection() {

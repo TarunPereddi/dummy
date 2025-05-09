@@ -1,3 +1,4 @@
+"use client";
 import { countries, type CountryCode, DEFAULT_COUNTRY_CODE } from "./countries"
 
 // Base prices in USD

@@ -1,5 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
+// src/components/sections/hero-section.tsx
+import Image from "next/image";
+import ReserveButton from "../ReserveButton";
 
 export default function HeroSection() {
   return (
@@ -38,12 +39,8 @@ export default function HeroSection() {
               The Art of Fight: Turn Clash into Connection. Learn step by step emotional regulation techniques, mindset reframes and strategic communication templates to use disagreements and make your relationships stronger than ever before.
             </p>
 
-            <Link
-              href="#"
-              className="inline-block bg-[#6EC473] text-white font-bold py-4 px-10 rounded-full text-xl hover:bg-opacity-90 transition-all font-sans"
-            >
-              Reserve Your Spot Now
-            </Link>
+            {/* Replaced Link with ReserveButton component */}
+            <ReserveButton />
           </div>
 
           {/* Right column - Image (desktop version) */}
@@ -97,15 +94,11 @@ export default function HeroSection() {
               The Art of Fight: Turn Clash into Connection. Learn step by step emotional regulation techniques, mindset reframes and strategic communication templates to use disagreements and make your relationships stronger than ever before.
             </p>
 
-            <Link
-              href="#"
-              className="inline-block bg-[#6EC473] text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-opacity-90 transition-all font-sans"
-            >
-              Reserve Your Spot Now
-            </Link>
+            {/* Replaced Link with ReserveButton component */}
+            <ReserveButton />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

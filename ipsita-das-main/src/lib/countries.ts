@@ -1,3 +1,4 @@
+"use client";
 export type CountryCode = keyof typeof countries
 
 export const countries = {
